@@ -46,22 +46,39 @@
   background-size: 100% 100%;
 }
 </style>
-<body style="background-color:white;">
-<img src="./libreta2_n5.png" alt="xddd" usemap="#libreta" height="475" width="475">
-<picture>
-  <!-- Imagen para pantallas pequeñas (hasta 600px) -->
-  <source media="(max-width: 600px)" srcset="./pequeno.png">
-  
-  <!-- Imagen por defecto para pantallas más grandes -->
-<source background-image:"(max-width: 600px)" srcset="./pequeno.png">
-</picture>
-<map name="libreta">
-  <area shape="rect" coords="87,170,373,185" alt="Noticia 1" href="http://127.0.0.1:5500/noticia1.html">
-  <area shape="rect" coords="84,187,369,210" alt="Noticia 2" href="http://127.0.0.1:5500/noticia2.html"">
-  <area shape="rect" coords="84,212,370,234" alt="Noticia 3" href="http://127.0.0.1:5500/noticia3.html"">
-  <area shape="rect" coords="86,236,371,258" alt="Noticia 4" href="http://127.0.0.1:5500/noticia4.html"">
-  <area shape="rect" coords="84,265,370,282" alt="Noticia 5" href="http://127.0.0.1:5500/noticia5.html"">
-</map>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+nav {
+  position: fixed;
+  top: 0;
+  left: 5;
+  width: 32,2%;
+  background-color: #6c56eb;
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #E4FE03;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="http://127.0.0.1:5500/noticia1.html">Noticia 1</a>
+<a href="http://127.0.0.1:5500/noticia2.html">Noticia 2</a>
+<a href="http://127.0.0.1:5500/noticia3.html">Noticia 3</a>
+<a href="http://127.0.0.1:5500/noticia4.html">Noticia 4</a>
+<a href="http://127.0.0.1:5500/noticia5.html">Noticia 5</a>
+</nav>
+
   <div class="news-container">
     <p><h3 style="border:2px solid red;">"Actividad 2.3"</p></h3> <!-- Esto es una noticia literaria que es una cita de Don Quijote de la mancha -->
 <p> ÚLTIMA HORA LITERARIA! ---
@@ -69,7 +86,7 @@ Esta es una de citas mas famosas de nuestro querido Don Quijote de la mancha.
 <p><em><h4 style= "color: black;">"¡Oh bella ingrata, amada enemiga mia!, del modo que por tu causa quedo:
    si gustares de acorrerme, tuyo soy; y si no, haz lo que te viniere en
     gusto, que con acabar mi vida habre satisfecho a tu crueldad y a mi deseo".
-</p></em>
+</p></em></style>
 <table style= "width:75%">
   <style>
     caption {
@@ -138,11 +155,6 @@ Esta es una de citas mas famosas de nuestro querido Don Quijote de la mancha.
   </tr>
 
 <table style= "width:60%">
-  <style>
-    
- 
-  </style>
-  
   <tr>
     <th>Noticias</th>
     <th>Enlaces</th>

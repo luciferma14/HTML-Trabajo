@@ -20,34 +20,50 @@ body {
   background-size: 100% 100%;
 }
 </style>
-<picture>
-  <!-- Imagen para pantallas pequeñas (hasta 600px) -->
-<source background-image:"(max-width: 600px)" url('./pequeno.png');>
-</picture>
-
 <style>
     body {
-      display: flex;
-      align-items: center;
+      align-items: top;
       justify-content: center;
       height: 100vh;
-
     }
 </style>
 
 <div class="news-container"><centre>
-  <h1 style= "color:#E4FE03">INDICE</h1>
+  <h1 style= "color:#E4FE03" >INDICE</h1>
   </centre>
 
-  <img src="./libreta2.png" alt="xddd" usemap="#libreta" height="475" width="475">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+  nav {
+    position: center;
+    top: 25;
+    left: 100;
+    width: 32,3%;
+    background-color: #6c56eb;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.406);
+    z-index: 1000;
+  }
+  nav a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: #88b012;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
 
-  <map name="libreta">
-  <area shape="rect" coords="87,170,373,185" alt="Noticia 1" href="https://luciafff.w3spaces.com/noticia1.html"">
-  <area shape="rect" coords="84,187,369,210" alt="Noticia 2" href="https://luciafff.w3spaces.com/noticia2.html"">
-  <area shape="rect" coords="84,212,370,234" alt="Noticia 3" href="https://luciafff.w3spaces.com/noticia3.html"">
-  <area shape="rect" coords="86,236,371,258" alt="Noticia 4" href="https://luciafff.w3spaces.com/noticia4.html"">
-  <area shape="rect" coords="84,265,370,282" alt="Noticia 5" href="https://luciafff.w3spaces.com/noticia5.html"">
-  </map>
+<nav>
+<a href="http://127.0.0.1:5500/noticia1.html">Noticia 1</a>
+<a href="http://127.0.0.1:5500/noticia2.html">Noticia 2</a>
+<a href="http://127.0.0.1:5500/noticia3.html">Noticia 3</a>
+<a href="http://127.0.0.1:5500/noticia4.html">Noticia 4</a>
+<a href="http://127.0.0.1:5500/noticia5.html">Noticia 5</a>
+</nav>
 </div>
 
  </body>

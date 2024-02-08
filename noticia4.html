@@ -3,59 +3,82 @@
 <head>
   <title>Noticia 4</title>
   <link rel="icon" type="image/x-icon" href="./logoNoticias2.png">
-</head>
-<body>
   <style>
     table {
-      background-color: rgb(140, 140, 222);
+      background-color: rgb(80, 168, 236);
       font-family: arial, sans-serif;
       border-collapse: collapse;
       width: 100%;
     }
     
   td, th {
-      border: 1px solid black;
+  
       padding: 20px;
   }
     
-    tr:nth-child(even) {
-      background-color: rgb(140, 140, 222);
-    }
-    
-    </style>
-    <table style= "width:75%">
-      <style>
-        caption {
-          color: #fff; 
-        }
-      </style>
+  tr {
+  border-bottom: 1px solid #0228ff;
+  }
+
+  th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(170, 37, 207, 0.4);
+  }
+
+  tr:hover {
+      background-color: #c8e775;
+  }
+</style>
+  
 </head>
-  <style>
+<body>
+<style>
       body {
-        width: 1500px;
-        text-align: justify;
-        justify-content: center;
-        margin: 2;
-      }
-    body {
-      background-image: url('./fonfoPagina.png');
-      background-repeat: no-repeat;
-      background-attachment: fixed; 
-      background-size: 100% 100%;
+      display: flex;
+      width: 1500px;
+      text-align: justify;
+      justify-content: center;
+      margin: 2;
     }
-  </style>
-<img src="./libreta2_n4.png" alt="xddd" usemap="#libreta" height="475" width="475">
+  body {
+  background-image: url('./fonfoPagina.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+</style>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+nav {
+  position: fixed;
+  top: 0;
+  left: 5;
+  width: 32,2%;
+  background-color: #6c56eb;
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #E4FE03;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
 
-
-<map name="libreta">
-  <area shape="rect" coords="87,170,373,185" alt="Noticia 1" href="http://127.0.0.1:5500/noticia1.html"">
-  <area shape="rect" coords="84,187,369,210" alt="Noticia 2" href="http://127.0.0.1:5500/noticia2.html"">
-  <area shape="rect" coords="84,212,370,234" alt="Noticia 3" href="http://127.0.0.1:5500/noticia3.html"">
-  <area shape="rect" coords="86,236,371,258" alt="Noticia 4" href="http://127.0.0.1:5500/noticia4.html"">
-  <area shape="rect" coords="84,265,370,282" alt="Noticia 5" href="http://127.0.0.1:5500/noticia5.html"">
-</map>
-<div class="news-container">
-    <h4 style="background-color: white;"> 
+<nav>
+<a href="http://127.0.0.1:5500/noticia1.html">Noticia 1</a>
+<a href="http://127.0.0.1:5500/noticia2.html">Noticia 2</a>
+<a href="http://127.0.0.1:5500/noticia3.html">Noticia 3</a>
+<a href="http://127.0.0.1:5500/noticia4.html">Noticia 4</a>
+<a href="http://127.0.0.1:5500/noticia5.html">Noticia 5</a>
+</nav>
+  <h4 style="background-color: white;">
 
     <p><b> <!-- Esto es una noticia matematica la cual habla sobre las escuaciones de segundo grado -->
     ECUACIONES MATEMATICAS
@@ -67,8 +90,32 @@
       hacer un esfuerzo minimo para poder realizarla. Esta comprobado por
       la ciencia que hasta un nino entre 7 y 13 anos podria realizarla
       sin problema.</p>
-
+  </h4>
+<style>
+    table {
+      background-color: rgb(80, 168, 236);
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+  td, th {
   
+      padding: 20px;
+  }
+    
+  tr {
+  border-bottom: 1px solid #0228ff;
+  }
+
+  th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(170, 37, 207, 0.4);
+  }
+
+  tr:hover {
+      background-color: #c8e775;
+  }
+</style>
     <tr>
       <td rowspan="3"> 1 </td>
       <td colspan="2" > 3 </td>
@@ -91,7 +138,7 @@
   
     <a href="indice.html">
         <img src="./flecha.png" alt="HTML tutorial" style="width:42px;height:42px;">
-        </a>
-</div>
+      </a>
+
 </body>
 </html> 
