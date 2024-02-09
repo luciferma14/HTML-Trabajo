@@ -20,12 +20,37 @@
   border-bottom: 1px solid #0228ff;
   }
 
-  th:nth-child(even),td:nth-child(even) {
-  background-color: rgba(170, 37, 207, 0.4);
-  }
-
   tr:hover {
       background-color: #c8e775;
+  }
+  td:first-child {
+      background-color: #69e7b5;
+  }
+
+
+  td:not(:first-child) {
+      background-color: #874eb5;
+  }
+</style>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+  }
+
+  h1 {
+    color: rgb(255, 255, 255);
+  }
+
+  article {
+    margin-bottom: 20px;
+  }
+
+  /* Lista numerada de autores */
+  .author-list {
+    list-style-type: decimal;
+    margin-left: 20px;
   }
 </style>
   
@@ -93,6 +118,27 @@ Esta es una de citas mas famosas de nuestro querido Don Quijote de la mancha.
       color: #d02121; 
     }
   </style>
+
+<h2 style="color:rgb(8, 253, 204) ">Lista Numerada de Autores</h2>
+<ul style="color:rgb(8, 253, 204)">
+  <ul class="author-list">
+    <li>
+      Lucía Ferrandis
+      <ul class="works-list">
+        <li>Historias fantásticas</li>
+        <li>Un lugar para soñar</li>
+        <li>Noches como una oruga</li>
+      </ul>
+    </li>
+    <li>
+      Álvaro Ferrandis
+        <ul class="works-list">
+        <li>El diario de Alvin</li>
+        <li>Que viva el dinero</li>
+        <li>Horas perdidas</li>
+      </ul>
+    </li>
+  </ul>
   <tr>
     <caption>COMPRA DE LIBROS</caption>
   </tr>
