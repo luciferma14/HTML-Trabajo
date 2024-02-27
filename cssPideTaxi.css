@@ -1,0 +1,62 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #000000;
+  }
+  
+  h2 {
+    font-size: 18px;
+    color: #000000;
+  }
+  
+  .header {
+    height: 100px;
+    background-color: #ffffff;
+  }
+  
+  .logo {
+    float: left;
+    margin: 10px;
+  }
+  
+  .order-button {
+    float: right;
+    margin: 10px;
+    background-color: #008000;
+    color: #ffffff;
+  }
+  
+  .order-form {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .map {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .taxi-info {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .trip-history {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .footer {
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
