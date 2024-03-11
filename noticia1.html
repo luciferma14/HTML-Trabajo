@@ -14,7 +14,24 @@
   .titulo-noticia {
             color: #333;
         }
+  .enlaces {
+  position: sticky;
+  top: 1000%;
+  transform: translateY(0%);
+  right: 100;
+  width: 32.2%;
+  background-color: #6c56eb;
+  padding: 10px;
+  z-index: 500;
+}
+.enlaces a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #E4FE03;
+  font-weight: bold;
+}
 </style>
+
 <body>
   <picture>
   <!-- Imagen para pantallas pequeñas (hasta 600px) -->
@@ -43,51 +60,32 @@
     font-family: Arial, sans-serif;
     margin: 20px;
   }
-nav {
-  position: fixed;
+div {
   top: 0;
   left: 5;
-  width: 32,2%;
-  background-color: #6c56eb;
+  background-color: #6952ea;
   padding: 10px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-}
-nav a {
-  margin-right: 15px;
-  text-decoration: none;
-  color: #E4FE03;
-  font-weight: bold;
+
 }
 </style>
 </head>
 <body>
 
-<nav>
-<a href="http://127.0.0.1:5500/noticia1.html">Noticia 1</a>
-<a href="http://127.0.0.1:5500/noticia2.html">Noticia 2</a>
-<a href="http://127.0.0.1:5500/noticia3.html">Noticia 3</a>
-<a href="http://127.0.0.1:5500/noticia4.html">Noticia 4</a>
-<a href="http://127.0.0.1:5500/noticia5.html">Noticia 5</a>
-</nav>
+  <div class="enlaces">
+    <a href="http://127.0.0.1:5500/noticia1.html">Noticia 1</a>
+    <a href="http://127.0.0.1:5500/noticia2.html">Noticia 2</a>
+    <a href="http://127.0.0.1:5500/noticia3.html">Noticia 3</a>
+    <a href="http://127.0.0.1:5500/noticia4.html">Noticia 4</a>
+    <a href="http://127.0.0.1:5500/noticia5.html">Noticia 5</a>
+  </div>
 
-<div class="news-container"><centre>
-  <!-- Esto es una noticia del Real Madrid que habla de su restuarante -->
-
-  <h1 style= "color:red;" class="titulo-noticia">El Real Madrid tendra su propia cadena de restaurantes</h1>
-  <h4 Style= "color: black;"> Se llamara 'UNO by Real Madrid' y el primer restaurante se abrira en Ciudad de Mexico el proximo mes de octubre.</h4>
-  <hr> <!--linea-->
-
-  <h3 style="font-family:arial;"><h3 Style= "color: black;">El Real Madrid y Grupo San Pablo han hecho oficial el nacimiento de "UNO By Real Madrid", la cadena de restaurantes
-    con la que pretenden expandir la marca Real Madrid a nivel mundial ofreciendo un innovador concepto de restauracion fast-casual.
-   "UNO By Real Madrid" nace para ser un referente internacional en la restauracion fast-casual, donde el principal valor es la calidad del producto.
-  </h3><br></centre>
+<div class="noticia">
+  <h1 class="titulo-noticia" style="color: red;">El Real Madrid tendrá su propia cadena de restaurantes</h1>
+  <h4 class="subtitulo">Se llamará "UNO by Real Madrid" y el primer restaurante se abrirá en Ciudad de México el próximo mes de octubre.</h4>
+  <hr>
+  <p>El Real Madrid y Grupo San Pablo han hecho oficial el nacimiento de "UNO By Real Madrid", la cadena de restaurantes con la que pretenden expandir la marca Real Madrid a nivel mundial ofreciendo un innovador concepto de restauración fast-casual.</p>
+  <p>"UNO By Real Madrid" nace para ser un referente internacional en la restauración fast-casual, donde el principal valor es la calidad del producto.</p>
   <img src="RM.png" width="860" height="440">
-
-
-  <a href="indice.html">
-  <img src="./flecha.png" alt="volver indice" style="width:42px;height:42px;">
-  </a>
 </div>
 
 </body>
