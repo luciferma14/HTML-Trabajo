@@ -10,6 +10,7 @@
       border: 1px solid #ddd;
       padding: 10px;
       margin-bottom: 10px;
+      overflow-y: scroll;
   }
   .titulo-noticia {
             color: #333;
@@ -44,6 +45,7 @@
       transform: translate(80%, 80%);
       z-index: 100;
     }
+
 </style>
 
 <body>
@@ -77,9 +79,17 @@
 div {
   top: 0;
   left: 5;
-  background-color: #735dd718;
+  background-color: #735dd7b9;
   padding: 10px;
 }
+
+.titulo {
+      font-weight: bold;
+      color: red;
+    }
+    .traduccion {
+      background-color: #735dd7b9;
+    }
 </style>
 </head>
 <body>
@@ -92,7 +102,7 @@ div {
     <a href="http://127.0.0.1:5500/noticia5.html">Noticia 5</a>
   </div>
 
-<div class="noticia">
+  <div class="noticia">
   <h1 class="titulo-noticia" style="color: red;">El Real Madrid tendrá su propia cadena de restaurantes</h1>
   <h4 class="subtitulo">Se llamará "UNO by Real Madrid" y el primer restaurante se abrirá en Ciudad de México el próximo mes de octubre.</h4>
   <hr>
@@ -100,6 +110,12 @@ div {
   <p>"UNO By Real Madrid" nace para ser un referente internacional en la restauración fast-casual, donde el principal valor es la calidad del producto.</p>
   <img src="RM.png" width="860" height="440">
 </div>
+
+<div class="noticia traduccion">
+      <h2 class="titulo">Título de la noticia en inglés</h2>
+      <p>Real Madrid and Grupo San Pablo have made official the birth of "UNO By Real Madrid", the restaurant chain with which they intend to expand the Real Madrid brand worldwide by offering an innovative fast-casual restaurant concept.</p>
+      <p>"UNO By Real Madrid" was created to be an international benchmark in fast-casual restaurants, where the main value is the quality of the product.</p>
+    </div>
 <div class="marca-agua">  <img src="marcaAgua.png" width="100" height="100">
   <div class="marca-agua">Borrador</div>
 </div>
