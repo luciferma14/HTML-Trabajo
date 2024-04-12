@@ -11,10 +11,29 @@
       padding: 50px;
       margin-bottom: 10px;
       overflow-y: scroll;
+      background-image: linear-gradient(rgba(6, 47, 230, 0.767), rgba(118, 26, 238, 0.589));
+      border-radius: 25px;
+      height: 575px;
+      width: 1630px;
   }
-  .titulo-noticia {
-            color: #333;
-        }
+.texto {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+  .titulo-noticia{
+      
+      color: #ff0000;
+      font-family: "Times New Roman", Times, serif;
+  }
+  .tooltip .tooltiptext::after {
+        content: "Real Madrid";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: black transparent transparent transparent;
+  }
   .enlaces {
   position: sticky;
   top: 0%;
@@ -54,7 +73,41 @@
       padding: 10px;
       box-sizing: border-box;
     }
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted rgba(182, 7, 226, 0.781);
+}
 
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(182, 7, 226, 0.781);
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 </style>
 
 <body>
@@ -85,19 +138,14 @@
     font-family: Arial, sans-serif;
     margin: 20px;
   }
-div {
-  top: 0;
-  left: 0;
-  background-color: #735dd7b9;
-  padding: 0px;
-}
 
 .titulo {
       font-weight: bold;
-      color: red;
+      
     }
     .traduccion {
       background-color: #735dd7b9;
+      
     }
 </style>
 </head>
@@ -111,13 +159,16 @@ div {
     <a href="http://127.0.0.1:5500/noticia5.html">Noticia 5</a>
   </div>
 
-  <div class="noticia">
-  <h1 class="titulo-noticia" style="color: red;">El Real Madrid tendrá su propia cadena de restaurantes</h1>
-  <h4 class="subtitulo">Se llamará "UNO by Real Madrid" y el primer restaurante se abrirá en Ciudad de México el próximo mes de octubre.</h4>
-  <hr>
-  <p>El Real Madrid y Grupo San Pablo han hecho oficial el nacimiento de "UNO By Real Madrid", la cadena de restaurantes con la que pretenden expandir la marca Real Madrid a nivel mundial ofreciendo un innovador concepto de restauración fast-casual.</p>
-  <p>"UNO By Real Madrid" nace para ser un referente internacional en la restauración fast-casual, donde el principal valor es la calidad del producto.</p>
-  <img class="align-img" src="RM.png" width="860" height="440">
+  <div class="noticia texto">
+    <div class="tooltip">Página Web del Real Madrid
+      <span class="tooltiptext"> Real Madrid</span>
+    </div>
+    <h1 class="titulo-noticia" style="text-shadow: 7px 7px rgb(75, 5, 5);">El Real Madrid tendrá su propia cadena de restaurantes</h1>
+    <h4>Se llamará "UNO by Real Madrid" y el primer restaurante se abrirá en Ciudad de México el próximo mes de octubre.</h4>
+    <hr>
+    <p>El Real Madrid y Grupo San Pablo han hecho oficial el nacimiento de "UNO By Real Madrid", la cadena de restaurantes con la que pretenden expandir la marca Real Madrid a nivel mundial ofreciendo un innovador concepto de restauración fast-casual.</p>
+    <p>"UNO By Real Madrid" nace para ser un referente internacional en la restauración fast-casual, donde el principal valor es la calidad del producto.</p>
+    <img class="align-img" src="RM.png" width="860" height="440">
 </div>
 
 <!-- <div class="noticia traduccion">
