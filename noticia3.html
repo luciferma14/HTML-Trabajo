@@ -14,7 +14,10 @@
     .titulo-noticia {
             color: #333;
         }
+
 </style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
   <body>
   <style>
         body {
@@ -64,28 +67,42 @@
   <a href="http://127.0.0.1:5500/noticia5.html">Noticia 5</a>
   </nav>
     <div class="news-container">
-    <!-- Aqui ponemos un poema centrado, en negrita, en cursiva y subrrayado -->
-  <p><h3 style="background-color:white;"><h3 style="height: 20px; background: url('./degradado2.jpg') center / cover; color: red; text-align: center; padding: 10px;"
-        style="border:2px solid red;">"Actividad 2.2"</p></h3>
-    <pre><center><i><b><ins>
-    Recuerde el alma dormida
-    Avive el seso y despierte
-    Contemplando
-    Como se pasa la vida,
-    Como se viene la muerte,
-    Tan callando,
-    Cuan presto se va el placer,
-    Como, despues de acordado
-    Da dolor,
-    Como, a nuestro parecer,
-    Cualquier tiempo pasado
-    Fue mejor.
-    </pre></i></b></ins><br>
+      
+      <button class="news-button" data-source="https://www.elpais.es">El País</button>
+
+      <button class="news-button" data-source="https://www.elmundo.es">El Mundo</button>
+      
+      <button class="news-button" data-source="https://www.larazon.es">La Razón</button>
+      
+      
+      <iframe id="news-iframe" src="https://www.elpais.es" width="800" height="600"></iframe>
 
 
-    <a href="indice.html">
-        <img src="./flecha.png" alt="HTML tutorial" style="width:42px;height:42px;">
-        </a>
+        <!-- Aqui ponemos un poema centrado, en negrita, en cursiva y subrrayado -->
+      <p><h3 style="background-color:white;"><h3 style="height: 20px; background: url('./degradado2.jpg') center / cover; color: red; text-align: center; padding: 10px;"
+            style="border:2px solid red;">"Actividad 2.2"</p></h3>
+        <pre class="font-effect-fire"><center><b>
+        Recuerde el alma dormida
+        Avive el seso y despierte
+        Contemplando
+        Como se pasa la vida,
+        Como se viene la muerte,
+        Tan callando,
+        Cuan presto se va el placer,
+        Como, despues de acordado
+        Da dolor,
+        Como, a nuestro parecer,
+        Cualquier tiempo pasado
+        Fue mejor.
+        </pre></b><br>
+
+
+        <a href="indice.html">
+            <img src="./flecha.png" alt="HTML tutorial" style="width:42px;height:42px;">
+          </a>
+
+      <iframe src="https://www.marca.com/" height="600" width="1000" ></iframe> 
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6164.114603786676!2d-0.417961223938558!3d39.42282867161664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604e6086bf9d93%3A0x2ee54a8d564b0e68!2sIES%20La%20S%C3%A9nia!5e0!3m2!1ses!2ses!4v1713540141021!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </head>
 </body>
