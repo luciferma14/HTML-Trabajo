@@ -55,6 +55,27 @@
     color: #E4FE03;
     font-weight: bold;
   }
+
+  .rate-stars label {
+
+    display:grid;
+
+    width: 2em;
+
+    height: 2em;
+
+    line-height: 2em;
+
+    text-align: center;
+
+    font-size: 1em;
+
+    border-radius: 50%;
+
+    background-color: #ddd;
+
+    cursor: pointer;
+  }
   </style>
   </head>
   <body>
@@ -76,6 +97,35 @@
       
       
       <iframe id="news-iframe" src="https://www.elpais.es" width="800" height="600"></iframe>
+
+      <form>
+        <label for="gsearch">Busca por Google:</label>
+        <input type="search" id="gsearch" name="gsearch">
+      </form> 
+
+      
+
+      <div class="rate-container">
+
+        <label>Valora nuestra página:  </label>
+      
+        <select id="rating" name="rating">
+      
+          <option value="">Select a rating</option>
+      
+          <option value="1">1</option>
+      
+          <option value="2">2</option>
+      
+          <option value="3">3</option>
+      
+          <option value="4">4</option>
+      
+          <option value="5">5</option>
+      
+        </select>
+      
+      </div>
 
 
         <!-- Aqui ponemos un poema centrado, en negrita, en cursiva y subrrayado -->
