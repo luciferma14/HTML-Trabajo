@@ -28,7 +28,8 @@
         margin: 2;
       }
     body {
-    background-image: url('./fonfoPagina.png');
+    /* background-image: url('./fonfoPagina.png'); */
+    background-color: rgb(247, 247, 247);
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
@@ -76,6 +77,10 @@
 
     cursor: pointer;
   }
+  .registro{
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+  }
   </style>
   </head>
   <body>
@@ -106,11 +111,34 @@
         <input type="search" id="gsearch" name="gsearch">
       </form> 
       <br>
-      <form action="/subscribe" method="post">
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
-        <button type="submit">Suscribirse</button>
-      </form>
+      <div class="registro">
+        <h1>Crear cuenta</h1>
+
+            <form>
+              <label for="name">Nombre y apellido:</label><br>
+              <input type="text" id="name" name="name" style="width: 350px;"><br>
+              <br>
+              <label for="email">Número de móvil o dirección de correo electrónico:</label><br>
+              <input type="text" id="email" name="email" style="width: 350px;"><br>
+              <br>
+              <label for="password">Contraseña:</label><br>
+              <input type="password" id="password" name="password" minlength="6" style="width: 350px;">
+              <h6>La contraseña debe tener 6 caracteres como mínimo.</h6>
+              <br>
+              <label for="confirmpassword">Confirma tu contraseña:</label><br>
+              <input type="password" id="confirmpassword" name="confirmpassword" style="width: 350px;"><br>
+              <br>
+              <input type="submit" value="Continuar" style="background-color: yellow;" style="width: 350px;">
+            </form>
+          <form action="upload.php" method="post" enctype="multipart/form-data">
+
+            <!-- <input type="file" name="photo" id="photo" accept="image/*">
+          
+            <input type="submit" value="Subir foto"> -->
+          
+          </form>
+      </div>
+      
 
       <br>
 
