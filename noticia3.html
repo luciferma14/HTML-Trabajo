@@ -15,6 +15,20 @@
             color: #333;
         }
 
+    .video {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: -100;
+      background-size: cover;
+      opacity: 0.30;
+    }
+
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
@@ -29,7 +43,7 @@
       }
     body {
     /* background-image: url('./fonfoPagina.png'); */
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(236, 203, 141);
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
@@ -162,7 +176,21 @@
       
         </select>
       
+        <video width="320" height="240" controls>
+          <source src="X2Download.app-How to Install Ubuntu Server 24.04 LTS on VirtualBox Install Ubuntu Server 24.04 on VirtualBox 2024.mp4" type="video/mp4">
+        </video>
+
+
+        <iframe width="420" height="315"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe> 
+        
+        <!-- <video autoplay loop>
+          <source src="X2Download.app-How to Install Ubuntu Server 24.04 LTS on VirtualBox Install Ubuntu Server 24.04 on VirtualBox 2024.mp4" type="video/mp4">
+        </video> -->
+
       </div>
+
 
 
         <!-- Aqui ponemos un poema centrado, en negrita, en cursiva y subrrayado -->
